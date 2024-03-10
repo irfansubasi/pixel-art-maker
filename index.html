@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>Pixel Art Maker</title>
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/f74be9f8aa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <!-- Header section -->
+    <header>
+        <!-- Page title -->
+        <h1 class="title">Pixel Art Maker</h1>
+    </header>
+    <!-- Main content section -->
+    <main id="content">
+        <!-- Toolset for pixel art manipulation -->
+        <div id="tools">
+            <!-- Buttons for different modes -->
+            <button id="colorbtn" class="buttons">Color Mode</button>
+            <button id="rainbowbtn" class="buttons rainbow">Rainbow Mode</button>
+            <button id="eraserbtn" class="buttons">Eraser</button>
+            <button id="clearbtn" class="buttons">Clear</button>
+            <button id="gridbtn" class="buttons">Hide Grid</button>
+            <!-- Color picker input -->
+            <input id="color-picker" type="color" value="#000">
+            <!-- Range slider for grid size -->
+            <div class="range-slider">
+                <input id="slider-range" class="slider" type="range" value="16" min="1" max="100">
+                <output id="sliderValue">16 X 16</output>
+            </div>
+        </div>
+        <!-- Container for pixel grid -->
+        <div id="grid-container"></div>
+    </main>
+    <!-- Footer section -->
+    <footer class="footer">
+        <p>
+            <!-- Copyright notice -->
+            Copyright ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            |
+          </p>
+          <!-- GitHub link -->
+          <a href="https://github.com/irfansubasi" target="_blank">
+            irfansubasi
+            <!-- GitHub icon -->
+            <i class="fa-brands fa-github"></i></a>
+    </footer>
+</div>
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
